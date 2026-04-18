@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Player
+comment1.params=
+comment1.target=Player()
+comment2.params=item
+comment2.target=void\ addItem(Item)
+comment3.params=itemName
+comment3.target=boolean\ hasItem(java.lang.String)
+comment4.params=points
+comment4.target=void\ addScore(int)
+comment5.params=
+comment5.target=int\ getScore()
+comment6.params=
+comment6.target=boolean\ isMaskEquipped()
+comment7.params=equipped
+comment7.target=void\ setMaskEquipped(boolean)
+comment8.params=
+comment8.target=void\ showInventory()
+numComments=9

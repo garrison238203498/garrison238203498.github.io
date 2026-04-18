@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CommandParser
+comment1.params=
+comment1.target=CommandParser()
+comment2.params=rawInput
+comment2.target=Command\ parse(java.lang.String)
+comment3.params=rawObject
+comment3.target=java.lang.String\ normalizeObject(java.lang.String)
+comment4.params=rawItem
+comment4.target=java.lang.String\ normalizeItem(java.lang.String)
+comment5.params=text
+comment5.target=java.lang.String\ clean(java.lang.String)
+comment6.params=text\ keywords
+comment6.target=boolean\ containsAny(java.lang.String,\ java.lang.String[])
+numComments=7

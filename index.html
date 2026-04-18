@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poison Airlock Escape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="shell">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Station Section Interface</p>
+                <h1>Poison Airlock Escape</h1>
+            </div>
+            <div class="topbar-actions">
+                <div class="readout">
+                    <span class="readout-label">Gas Saturation</span>
+                    <span id="gasReadout" class="readout-value">0%</span>
+                </div>
+                <button id="resetButton" class="ghost-button" type="button">Reset Run</button>
+            </div>
+        </header>
+
+        <main class="layout">
+            <section class="scene-panel">
+                <div class="room-header">
+                    <div>
+                        <p id="roomHazard" class="eyebrow">Low Hazard</p>
+                        <h2 id="roomName">Airlock Chamber</h2>
+                    </div>
+                    <p id="roomSummary" class="room-summary"></p>
+                </div>
+
+                <div id="scene" class="scene" data-room="AIRLOCK">
+                    <div class="scene-backdrop"></div>
+                    <div class="ceiling-lights"></div>
+                    <div class="warning-strip"></div>
+                    <div class="monitor-glow"></div>
+                    <div class="gas-layer">
+                        <div class="gas-cloud cloud-a"></div>
+                        <div class="gas-cloud cloud-b"></div>
+                        <div class="gas-cloud cloud-c"></div>
+                    </div>
+                    <div class="room-grid"></div>
+                    <div id="sceneObjects" class="scene-objects"></div>
+                </div>
+
+                <div class="movement-panel">
+                    <div class="panel-heading">
+                        <h2>Movement</h2>
+                    </div>
+                    <div id="movementGrid" class="movement-grid"></div>
+                </div>
+
+                <div class="quickbar">
+                    <button class="quick-command" data-command="look" type="button">Scan Room</button>
+                    <button class="quick-command" data-command="map" type="button">Map</button>
+                    <button class="quick-command" data-command="status" type="button">Status</button>
+                    <button class="quick-command" data-command="inventory" type="button">Inventory</button>
+                </div>
+            </section>
+
+            <aside class="status-panel">
+                <section class="status-block">
+                    <div class="panel-heading">
+                        <h2>3x3 Grid</h2>
+                    </div>
+                    <div id="stationMap" class="station-map"></div>
+                </section>
+
+                <section class="metric-stack">
+                    <div class="metric-card">
+                        <span class="metric-label">Time Remaining</span>
+                        <span id="timeValue" class="metric-value">600s</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Score</span>
+                        <span id="scoreValue" class="metric-value">0</span>
+                    </div>
+                </section>
+
+                <section class="status-block">
+                    <div class="panel-heading">
+                        <h2>Escape Routes</h2>
+                    </div>
+                    <div id="routeList" class="route-list"></div>
+                </section>
+
+                <section class="status-block">
+                    <div class="panel-heading">
+                        <h2>Warnings</h2>
+                    </div>
+                    <div id="warningList" class="warning-list"></div>
+                </section>
+
+                <section class="status-block">
+                    <div class="panel-heading">
+                        <h2>Inventory</h2>
+                    </div>
+                    <div id="inventoryGrid" class="inventory-grid"></div>
+                    <p class="inventory-note">Item buttons send `use [item]` into the Java logic.</p>
+                </section>
+            </aside>
+        </main>
+
+        <section class="console-panel">
+            <div class="console-header">
+                <h2>Narrative Feed</h2>
+                <span id="pendingBadge" class="pending-badge">Ready</span>
+            </div>
+            <div id="logPanel" class="log-panel"></div>
+            <form id="commandForm" class="command-form">
+                <label class="sr-only" for="commandInput">Command</label>
+                <input id="commandInput" name="command" type="text" autocomplete="off" placeholder="Type a command: go east">
+                <button type="submit">Transmit</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="choiceOverlay" class="overlay hidden">
+        <div class="overlay-card">
+            <p class="overlay-kicker">Critical Decision</p>
+            <h2 id="choicePrompt"></h2>
+            <div class="choice-actions">
+                <button id="choiceA" class="choice-card" type="button"></button>
+                <button id="choiceB" class="choice-card" type="button"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

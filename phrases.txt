@@ -1,0 +1,132 @@
+# Intro
+INTRO_1=You wake on the freezing metal floor of a station airlock.
+INTRO_2=The lights above you flicker like they are barely hanging on.
+INTRO_3=A distorted voice cracks through the speakers.
+INTRO_4="Toxic leak detected. Evacuation window: ten minutes."
+INTRO_5=Green gas curls along the floor. You need a way out, fast.
+
+# General
+UNKNOWN_1=That doesn't seem useful right now.
+QUIT_1=You stop fighting for the exit.
+WIN_1=ESCAPE SUCCESSFUL
+WIN_2=You got out before the station turned into a coffin.
+GAME_OVER_1=The air goes hot in your lungs.
+GAME_OVER_2=The room blurs green, then black.
+NO_ITEM_1=You don't have that item.
+EXAMINE_DEFAULT_1=Nothing about that stands out.
+USE_DEFAULT_1=That doesn't seem to do much right now.
+SOLVE_DEFAULT_1=You don't know how to solve that.
+ESCAPE_DEFAULT_1=That escape route doesn't exist.
+
+# Timed warning
+LOW_TIME_WARNING=The gas is rising faster now.
+LOW_TIME_WARNING=Your breaths are getting shorter.
+LOW_TIME_WARNING=The room feels smaller every second.
+
+# Look
+LOOK_1=The airlock is narrow, metallic, and getting harder to breathe in.
+LOOK_2=Green haze clings to the floor and creeps higher by the minute.
+
+# Panel
+EXAMINE_PANEL=The control panel hums faintly under your fingers.
+EXAMINE_PANEL=The panel casing is scratched and cold to the touch.
+PANEL_HINT_1=A service seam runs along the side. You could pry it open.
+PANEL_HINT_2=Parts of the panel are dark. It looks underpowered.
+PANEL_HINT_3=Power is flowing again. The keypad is live.
+
+# Grate
+EXAMINE_GRATE_1=The grate is loose, but not loose enough to remove by hand.
+EXAMINE_GRATE_2=You could probably force it open with the right tool.
+EXAMINE_GRATE_3=Behind the grate is a cramped shaft, but bent metal still blocks the deeper path.
+EXAMINE_GRATE_4=The vent route is open. Tight, filthy, but possible.
+
+# Toolbox
+TOOLBOX_1=You force the toolbox open.
+TOOLBOX_2=Inside: a screwdriver, a crowbar, and a replacement fuse.
+TOOLBOX_3=The toolbox is empty now.
+
+# Safe
+SAFE_1=The safe wants a 3-digit code.
+SAFE_2=Click. The safe opens.
+SAFE_3=Inside: an access card and a folded strip labeled MAIN DOOR: 5193.
+SAFE_4=Wrong. The safe stays shut.
+SAFE_5=The safe is already open.
+
+# Mask
+MASK_1=You take the oxygen mask off the wall.
+MASK_2=You've already got the mask.
+USE_MASK_1=You pull the mask on.
+USE_MASK_2=The air still tastes wrong, but less deadly.
+USE_MASK_3=You're already wearing it.
+
+# Monitor
+MONITOR_1=The screen jitters between warnings and diagnostics.
+MONITOR_2="Gas concentration rising."
+MONITOR_3="Emergency routes: MAIN / VENT / POD"
+MONITOR_4="Mirror may reveal hidden panel marking."
+
+# Locker
+LOCKER_1=The locker is sealed. It probably needs higher access.
+LOCKER_2=The access card reader flashes green.
+LOCKER_3=Inside: a compact battery cell and a launch key.
+LOCKER_4=The locker is empty now.
+
+# Pod
+POD_1=A narrow hatch leads to the emergency pod alcove.
+POD_2=The pod is dark. No power.
+POD_3=The hatch is open, but the pod still needs power.
+POD_4=The pod is powered and waiting for a launch key.
+
+# Mirror
+USE_MIRROR_1=You angle the mirror toward the panel.
+USE_MIRROR_2=In reflection, faded digits sharpen into view: 3917.
+USE_MIRROR_3=You've already read the hidden digits.
+
+# Screwdriver
+USE_SCREWDRIVER_1=You work the screwdriver under the panel casing.
+USE_SCREWDRIVER_2=The panel swings open, exposing a blown fuse slot.
+USE_SCREWDRIVER_3=You've already opened the panel.
+
+# Fuse
+USE_FUSE_1=You need access to the panel internals first.
+USE_FUSE_2=You slot the fuse into place.
+USE_FUSE_3=The system hum deepens as auxiliary power comes back online.
+USE_FUSE_4=Power is already restored.
+
+# Crowbar
+USE_CROWBAR_1=You wedge the crowbar into the grate.
+USE_CROWBAR_2=With a shriek of metal, the vent cover rips free.
+USE_CROWBAR_3=You force apart the bent metal deeper in the shaft.
+USE_CROWBAR_4=The vent path is barely crawlable now, but open.
+USE_CROWBAR_5=You've already done all the damage this crowbar needs to do.
+
+# Battery
+USE_BATTERY_1=You don't have a powered pod bay to install it in yet.
+USE_BATTERY_2=You slot the battery into the pod console.
+USE_BATTERY_3=The pod wakes with a low electronic hum.
+USE_BATTERY_4=The pod already has power.
+
+# Card and code
+USE_CARD_1=You swipe the access card through nearby readers. Restricted locks now respond.
+USE_CODE_1=The strip reads: 5193.
+
+# Solving
+SOLVE_PANEL_1=The panel is not fully powered yet.
+SOLVE_PANEL_2=You still don't know the hidden override code.
+SOLVE_PANEL_3=The lock releases with a heavy metallic thunk.
+SOLVE_PANEL_4=The main inner door can now be opened.
+SOLVE_PANEL_5=Wrong code. The keypad flashes red.
+
+SOLVE_MAIN_1=You still need to unlock the inner door first.
+SOLVE_MAIN_2=You don't have the final main door code.
+SOLVE_MAIN_3=Wrong. The door stays shut.
+
+# Escape prompts
+ESCAPE_MAIN_1=The main route is ready, but you still need the final door code.
+ESCAPE_MAIN_2=The main route isn't ready yet.
+ESCAPE_VENT_1=The vent grate is still in place.
+ESCAPE_VENT_2=The shaft is still too blocked to crawl through.
+ESCAPE_VENT_3=You force yourself into the vent shaft and crawl through the metal throat of the station.
+ESCAPE_POD_1=The escape pod still isn't ready.
+ESCAPE_POD_2=The pod needs a launch key.
+ESCAPE_POD_3=You strap into the pod and slam the launch sequence.

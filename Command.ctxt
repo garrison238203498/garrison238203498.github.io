@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Command
+comment1.params=type\ target
+comment1.target=Command(CommandType,\ java.lang.String)
+comment2.params=
+comment2.target=CommandType\ getType()
+comment3.params=
+comment3.target=java.lang.String\ getTarget()
+numComments=4

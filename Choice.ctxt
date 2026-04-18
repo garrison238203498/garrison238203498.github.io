@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Choice
+comment1.params=prompt\ optionA\ optionB
+comment1.target=Choice(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getPrompt()
+comment3.params=
+comment3.target=java.lang.String\ getOptionA()
+comment4.params=
+comment4.target=java.lang.String\ getOptionB()
+numComments=5
